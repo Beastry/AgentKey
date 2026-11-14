@@ -1,4 +1,6 @@
 // swift-tools-version:6.0
+// Package license metadata (first-party): SPDX-License-Identifier: GPL-3.0-only
+// Dependencies keep their own licenses. See LICENSE, LICENSES/README.md, and README.
 import PackageDescription
 
 let cryptoDep: Target.Dependency = .product(

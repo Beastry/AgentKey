@@ -17,3 +17,7 @@ Phase 1 is Mac + CLI + MCP. This folder only holds a minimal SwiftUI multiplatfo
 
 中文：用 Xcode 新建 Multiplatform App 工程（bundle id `com.neardws.agentkey`），替换入口文件为
 `Shared/AgentKeyApp.swift`，再以 "Add Local…" 方式引用仓库根目录的 Swift Package，并把 `AgentKeyCore` 加到 App target。
+
+## License
+
+First-party files in this folder follow the repository grant: GPL-3.0-only. See [../LICENSE](../LICENSE), [../LICENSES/README.md](../LICENSES/README.md), and the [License](../README.md#license) section of the root README. The preserved MIT copyright and permission notice is [../LICENSES/MIT-legacy.txt](../LICENSES/MIT-legacy.txt).

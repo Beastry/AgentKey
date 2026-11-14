@@ -19,7 +19,7 @@ AutoFill everywhere on Mac, iPhone and iPad · end-to-end encrypted peer-to-peer
 > transport are tested on Linux; Bonjour / Network.framework transports and Secure-Enclave key storage still need Mac
 > validation. Not audited.
 
-[中文说明](#中文说明) · [Design doc (zh)](docs/DESIGN.zh.md) · [Security](SECURITY.md)
+[中文说明](#中文说明) · [Design doc (zh)](docs/DESIGN.zh.md) · [Security](SECURITY.md) · [License](#license)
 
 ---
 
@@ -256,4 +256,28 @@ Phase 5：轮换助手、`http` 模式、iPhone 远程审批。
 
 ## License
 
-MIT © Neil Xu
+First-party source, tests, fixtures, scripts, and documentation in this repository are released under the GNU General Public License, version 3 only (**GPL-3.0-only**). The SPDX identifier is `GPL-3.0-only`. The license text is the unmodified GNU GPLv3 in [LICENSE](LICENSE). Scope, the preserved MIT grant, and third-party exclusions are summarized in [LICENSES/README.md](LICENSES/README.md).
+
+`LICENSE` includes the Free Software Foundation's "How to Apply These Terms to Your New Programs" appendix because that file is the unmodified GPLv3 text. The grant for this repository is GPL-3.0-only, as stated in this section and in `LICENSES/README.md`. The appendix's sample notice is the Foundation's general example.
+
+### Names already on record
+
+The existing names stay as written. This change does not merge them or name a new owner.
+
+- The MIT license file states `Copyright (c) 2026 Near`.
+- This README stated `MIT © Neil Xu`.
+
+### MIT terms from before this change
+
+[LICENSES/MIT-legacy.txt](LICENSES/MIT-legacy.txt) is the previous `LICENSE` file, byte for byte, including the Near copyright line and the MIT permission notice.
+
+Anyone who received a copy of this project under that MIT license keeps the MIT rights that copy granted. Publishing this revision and later revisions under GPL-3.0-only leaves those earlier grants in place. Git history is unchanged, so those earlier revisions still contain the MIT license. First-party material in the tree published with this change is offered under GPL-3.0-only.
+
+### Third-party material
+
+This statement covers first-party material only.
+
+- `swift-crypto` and `swift-asn1` (Apple) are Swift Package Manager dependencies pinned in `Package.resolved`. They are not copied into this tree. Both remain under the Apache License 2.0.
+- No third-party source, notice, or separately licensed asset is bundled here. `docs/DESIGN.zh.md` and a source comment mention a possible future vendored Argon2 (`phc-winner-argon2`, described there as CC0 and/or Apache-2.0). That code is not in the repository. If it is added later, it keeps its own terms.
+
+中文：本仓库的第一方源码、测试、夹具、脚本和文档以 **GPL-3.0-only**（GNU 通用公共许可证第 3 版，仅此版本）发布，全文是未经修改的 [LICENSE](LICENSE)。[LICENSES/MIT-legacy.txt](LICENSES/MIT-legacy.txt) 按字节保留迁移前的 MIT 版权行和许可声明：版权行是 `Copyright (c) 2026 Near`，本 README 原先的署名是 `MIT © Neil Xu`。两处姓名保持原样，不合并，也不另立所有人。已经按 MIT 获得旧副本的人，仍保有该 MIT 许可赋予的权利；本次变更不收回那些权利，也不改写历史。`swift-crypto` 与 `swift-asn1` 仍为 Apache-2.0，不在本次许可范围内。
